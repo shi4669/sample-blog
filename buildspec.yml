@@ -9,5 +9,6 @@ phases:
       - hexo generate
 artifacts:
    files:
-     - ’**/*’
+     - ’public/**/*’
+
 
