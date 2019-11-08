@@ -8,7 +8,7 @@ phases:
     commands:
       - hexo generate
 artifacts:
-   files:
-     - ’public/**/*’
-
+  files: 
+    - ’**/*’ 
+  base-directory: ’public’
 
