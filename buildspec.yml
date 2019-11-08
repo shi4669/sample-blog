@@ -7,8 +7,6 @@ phases:
   build:
     commands:
       - hexo generate
-
-artifacts:
-   files:
-     - **/*
-
+  post_build:
+    commands:
+      - aws s3 sync public/ s3://simalab-app-sample-blog/ --delete
